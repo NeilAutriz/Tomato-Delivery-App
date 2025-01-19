@@ -1,0 +1,65 @@
+/* pagselected ung section padding 2px bottom borderbottom 2px #49grey */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.nav-container{
+    padding: 20px;
+    font-family: "Outfit";
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image{
+    width: 150px;
+}
+
+.navigation-links{
+    gap: 20px;
+    color: #49557e;
+    list-style-type: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.search-containers{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.sign-in-button{
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid #49557e;
+    background-color: white;
+}
+
+.sign-in-button:hover{
+    color: #fff4f2;
+}
+
+.navigation-links .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.navigation-links li{
+    cursor: pointer;
+}
+
+.basket-icon-component{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    background-color: tomato;
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 5px;
+    top: -8px;
+    right: -8px;
+}
