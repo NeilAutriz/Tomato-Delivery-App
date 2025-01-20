@@ -17,6 +17,8 @@
     gap: 1.5vw;
     bottom: 10%;
     left: 6vw;
+    animation: fadeIn 3s;
+
 }
 
 .detail-container h2{
