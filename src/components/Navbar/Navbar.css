@@ -1,7 +1,3 @@
-/* pagselected ung section padding 2px bottom borderbottom 2px #49grey */
-
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
 
 .nav-container{
     padding: 20px;
@@ -35,10 +31,7 @@
     border-radius: 30px;
     border: 1px solid #49557e;
     background-color: white;
-}
-
-.sign-in-button:hover{
-    color: #fff4f2;
+    cursor: pointer;
 }
 
 .navigation-links .active{
