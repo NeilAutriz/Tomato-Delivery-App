@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useContext } from 'react'
 import { StoreContext } from '../../context/StoreContext'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
+import AppDownload from '../../components/AppDownload/AppDownload'
 
 const HomePage = () => {
     const [category, setCategory] = useState('All') 
@@ -16,7 +17,8 @@ const HomePage = () => {
         {console.log(food_list)}
         <Header />
         <ExploreMenu category={category} setCategory={setCategory}/>
-        <FoodDisplay food_list={food_list}/>
+        <FoodDisplay food_list={food_list} category={category}/>
+        <AppDownload />
     </div>
   )
 }

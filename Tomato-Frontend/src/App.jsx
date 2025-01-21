@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import HomePage from './pages/Home/HomePage'
 import CartPage from './pages/Cart/CartPage'
 import PlaceOrderPage from './pages/PlaceOrder/PlaceOrderPage'
-
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Route path='/cart' element={<CartPage />} />
         <Route path='/order' element={<PlaceOrderPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

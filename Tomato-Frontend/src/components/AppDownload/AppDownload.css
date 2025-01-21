@@ -1,0 +1,19 @@
+.app-download-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.store-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    margin-top: 15px;
+}
