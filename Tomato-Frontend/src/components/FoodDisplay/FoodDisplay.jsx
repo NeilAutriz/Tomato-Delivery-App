@@ -9,8 +9,8 @@ const FoodDisplay = ({food_list}) => {
         <div className="food-list-group">
             {food_list.map((item, index) => {
                 return(
-                    <FoodItem key={index} name={item.name} image={item.image} 
-                    price={item.price} description={item.description} category={item.category}/>
+                  <FoodItem key={index} name={item.name} image={item.image}
+                    price={item.price} description={item.description} category={item.category} id={item._id} />
                 )
             })}
         </div>
