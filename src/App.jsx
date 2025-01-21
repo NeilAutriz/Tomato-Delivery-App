@@ -7,7 +7,6 @@ import PlaceOrderPage from './pages/PlaceOrder/PlaceOrderPage'
 
 
 function App() {
-
   return (
     <div className='main-container'>
       <Navbar />
