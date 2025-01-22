@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { assets } from '../../assets/frontend_assets/assets'
 import './Navbar.css'
+import {Link} from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({setShowSignIn}) => {
   const [navlink, setNavlink] = useState('mobile-app')
 
   return (
@@ -12,22 +13,22 @@ const Navbar = () => {
       </div>
 
       <ul className='navigation-links'>
-        <li className={navlink === 'home' ? 'active' : ''}
+        <Link className={navlink === 'home' ? 'active' : ''}
           onClick={() => setNavlink('home')}>
           home
-        </li>
-        <li className={navlink === 'menu' ? 'active' : ''}
+        </Link>
+        <a href='#menu' className={navlink === 'menu' ? 'active' : ''}
           onClick={() => setNavlink('menu')}>
           menu
-        </li>
-        <li className={navlink === 'mobile-app' ? 'active' : ''}
+        </a>
+        <a href='#mobile-app'className={navlink === 'mobile-app' ? 'active' : ''}
           onClick={() => setNavlink('mobile-app')}>
           mobile-app
-        </li>
-        <li className={navlink === 'contact' ? 'active' : ''}
+        </a>
+        <a href='#footer' className={navlink === 'contact' ? 'active' : ''}
         onClick={() => setNavlink('contact')}>
           contact us
-        </li>
+        </a>
       </ul>
       
       <div className="search-containers">
@@ -37,7 +38,8 @@ const Navbar = () => {
           <div className="dot" />
         </div>
 
-        <button className='sign-in-button'>sign in</button>
+        <button className='sign-in-button'
+        onClick={() => setShowSignIn(true)}>sign in</button>
       </div>
 
     </div>

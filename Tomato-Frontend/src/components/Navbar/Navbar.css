@@ -32,6 +32,13 @@
     border: 1px solid #49557e;
     background-color: white;
     cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    color: #49557e;
+}
+
+.sign-in-button:hover{
+    background-color: #f7f0f0;
 }
 
 .navigation-links .active{
@@ -39,8 +46,9 @@
     border-bottom: 2px solid #49557e;
 }
 
-.navigation-links li{
+.navigation-links a{
     cursor: pointer;
+    font-size: 20px;
 }
 
 .basket-icon-component{

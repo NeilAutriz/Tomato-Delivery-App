@@ -8,7 +8,7 @@ const ExploreMenu = ({category, setCategory}) => {
     }    
   
   return (
-    <div className='menu-container'>
+    <div className='menu-container' id='menu'>
         <h1>Explore our menu</h1>
         <p className='menu-details'>Choose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your cravings and elevate your dining experience through one delicious meal at a time.</p>
 

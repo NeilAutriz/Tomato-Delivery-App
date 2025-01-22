@@ -1,2 +1,7 @@
 .home-container{
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  

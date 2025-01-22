@@ -1,0 +1,111 @@
+.auth-main-container{
+    background-color: #00000090;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: grid;
+}
+
+.auth-box-container{
+    place-self: center;
+    background-color: white;
+    padding: 100px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #808080;
+    gap: 25px;
+    border-radius: 20px;
+}
+
+.auth-header{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.close-icon{
+    padding: 5px;
+}
+
+.auth-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.login-inputs-container, .signup-inputs-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-inputs-container input, .signup-inputs-container input{
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #c9c9c9;
+
+}
+
+
+.terms-privacy-contain{
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.terms-service-input {
+    margin-right: 5px;
+    width: 30px; 
+    height: 20px; 
+    background-color: #ddd; /* Default background color */
+    border-radius: 5px; /* Optional: for rounded corners */
+    border: 2px solid #fff; /* Optional: white border for contrast */
+    position: relative; /* To position the checkmark */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.login-button, .sign-up-button{
+    width: 50%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.span-login, .span-signup{
+    margin-left: 10px;
+    transition: 0.2s;
+    border-bottom: 3px solid white;
+    color: tomato;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.span-login:hover, .span-signup:hover{
+    border-bottom: 3px solid tomato;
+}
+
+.close-icon{
+    cursor: pointer;
+    width: 37px;
+}
