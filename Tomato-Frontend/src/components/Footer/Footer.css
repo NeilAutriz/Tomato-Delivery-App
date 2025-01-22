@@ -82,3 +82,40 @@
     margin-top: 10px;
   }
   
+
+  @media (max-width: 700px){
+    .footer-top{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      flex-direction: column;
+    }
+    .footer-left, .footer-center, .footer-right{
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 15px;
+    }
+    .footer-left .footer-logo {
+      margin-bottom: 15px;
+      width: 160px;
+    }
+    .social-media-icon{
+      width: 37px;
+    }
+  }
+
+  @media (max-width: 500px){
+    
+    .footer-left, .footer-center, .footer-right{
+      font-size: 14px;
+    }
+    .footer-left .footer-logo {
+      margin-bottom: 10px;
+      width: 150px;
+    }
+    .social-media-icon{
+      width: 35px;
+    }
+  }

@@ -8,10 +8,7 @@ const Footer = () => {
         <div className="footer-left">
           <img src={assets.logo} className='footer-logo' alt='footer logo'/>
           <p className='footer-details'>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-
-          </p>
+          At Tomato, we bring a world of flavors to your table. From savory Italian pastas to spicy Asian delicacies and hearty American classics, our diverse menu caters to every palate. Fresh ingredients, bold flavors, and exceptional service are at the heart of everything we do. Visit us to experience a culinary journey like no other—because at Tomato, every meal is a celebration of taste!</p>
           <div className="footer-left-social">
             <img className='social-media-icon' src={assets.facebook_icon} alt="facebook icon"/>
             <img className='social-media-icon' src={assets.twitter_icon} alt="twitter icon" />

@@ -6,7 +6,6 @@ const FoodDisplay = ({food_list, category}) => {
   return (
     <div className='food-list-container'>
         <h1>Top dishes near you</h1>
-        <h1>{category}</h1>
         <div className="food-list-group">
             {food_list.map((item, index) => {
               if (category === 'All' || category == item.category) {

@@ -17,3 +17,59 @@
     gap: 40px;
     margin-top: 15px;
 }
+
+.download-store{
+    transition: 0.5s;
+    width: 250px;
+}
+
+.download-store:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+@media (max-width: 900px){
+    .store-container{
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .download-store{
+        width: 180px;
+    }
+    .app-download-container h1{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 700px){
+    .store-container{
+        gap: 20px;
+        margin-top: 10px;
+    }
+    .download-store{
+        width: 150px;
+    }
+    .app-download-container h1{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 700px){
+    .store-container{
+        gap: 15px;
+        margin-top: 10px;
+    }
+    .download-store{
+        width: 130px;
+    }
+    .app-download-container h1{
+        margin-left: 10px;
+        margin-right: 10px;
+
+        font-size: 22px;
+    }
+}

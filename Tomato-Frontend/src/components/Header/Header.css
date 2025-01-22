@@ -29,7 +29,7 @@
 
 .detail-container p{
     color: white;
-    font-size: 1vw;
+    font-size: 17px;
     max-width: 87%;
 }
 
@@ -41,4 +41,81 @@
     background-color: white;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+}
+
+@media (max-width: 1050px){
+    .header-container{
+        margin: 20px auto;
+    }
+
+    .detail-container h2{
+        font-size: max(4.5vw, 20px);
+    }
+    .detail-container p{
+        font-size: 13px;
+    }
+    .view-menu-button{
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 900px){
+    .header-container{
+        margin: 10px auto;
+    }
+    .detail-container{
+        max-width: 41%;
+    }
+    .detail-container h2{
+        font-size: 34px;
+    }
+    .detail-container p{
+        font-size: 12px;
+    }
+    .view-menu-button{
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 800px){
+    .header-container{
+        width: 90%;
+        margin: 20px auto;
+    }
+    .detail-container{
+        max-width: 39%;
+    }
+    .detail-container h2{
+        font-size: 30px;
+    }
+    .detail-container p{
+        display: none;
+    }
+    .view-menu-button{
+        padding: 6px 13px;
+    }
+}
+
+@media (max-width: 450px){
+    .header-container{
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .detail-container{
+        max-width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .detail-container h2{
+        font-size: 18px;
+    }
+    .detail-container p{
+        display: none;
+    }
+    .view-menu-button{
+        padding: 5px 10px;
+    }
 }

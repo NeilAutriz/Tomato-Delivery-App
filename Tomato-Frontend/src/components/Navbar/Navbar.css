@@ -56,3 +56,47 @@
     top: -8px;
     right: -8px;
 }
+
+@media (max-width: 1050px){
+    .nav-container{
+        padding: 15px;
+    }
+    .logo-image{
+        width: 130px;
+    }
+    .navigation-links{
+        gap:15px;
+        font-size: 15px;
+    }
+    .search-containers{
+        gap:30px;
+    }
+    .sign-in-button{
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 900px){
+    .nav-container{
+        padding: 13px;
+    }
+    .logo-image{
+        width: 110px;
+    }
+    .navigation-links{
+        gap:10px;
+        font-size: 14px;
+    }
+    .search-containers{
+        gap:20px;
+    }
+    .sign-in-button{
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 850px){
+    .navigation-links{
+        display: none;
+    }
+}

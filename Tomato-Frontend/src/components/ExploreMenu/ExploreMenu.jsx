@@ -3,7 +3,6 @@ import { menu_list } from '../../assets/frontend_assets/assets'
 
 
 const ExploreMenu = ({category, setCategory}) => {
-    
     const handleCategoryChange = (categoryName) => {
         setCategory(categoryName);
     }    
