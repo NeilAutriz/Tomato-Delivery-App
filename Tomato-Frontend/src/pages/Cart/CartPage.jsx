@@ -7,38 +7,40 @@ const CartPage = () => {
 
   return (
     <div className='cart-main-container'>
-      <div className="cart-table-layout">
-        <p>Items</p>
-        <p>Title</p>
-        <p>Price</p>
-        <p>Quantity</p>
-        <p>Total</p>
-        <p>Remove</p>
-      </div>
-      <hr className='table-separator'/>
-      {food_list.map((item, index) => {
-        if (cartContainer[item._id] > 0) {
-          return (
-            <>
-            <div className='cart-table-layout indiv-layout-item'> 
-              <div className="image-container-item">
-                <img src={item.image} className='cart-item-image' />
+      <div className="cart-top">
+        <div className="cart-table-layout">
+          <p>Items</p>
+          <p>Title</p>
+          <p>Price</p>
+          <p>Quantity</p>
+          <p>Total</p>
+          <p>Remove</p>
+        </div>
+        <hr className='table-separator'/>
+        {food_list.map((item, index) => {
+          if (cartContainer[item._id] > 0) {
+            return (
+              <>
+              <div className='cart-table-layout indiv-layout-item'> 
+                <div className="image-container-item">
+                  <img src={item.image} className='cart-item-image' />
+                </div>
+                <p className='cart-item-detail'>{item.name}</p>
+                <p className='cart-item-detail'>${item.price}</p>
+                <p className='cart-item-detail'>{cartContainer[item._id]}</p>
+                <p className='cart-item-detail'>${cartContainer[item._id] * item.price}</p>
+                <div className="remove-container">
+                  <span className='remove-item-x' onClick={() => removeCart(item._id)}>
+                    X
+                  </span>
+                </div>  
               </div>
-              <p className='cart-item-detail'>{item.name}</p>
-              <p className='cart-item-detail'>${item.price}</p>
-              <p className='cart-item-detail'>{cartContainer[item._id]}</p>
-              <p className='cart-item-detail'>${cartContainer[item._id] * item.price}</p>
-              <div className="remove-container">
-                <span className='remove-item-x' onClick={() => removeCart(item._id)}>
-                  X
-                </span>
-              </div>  
-            </div>
-            <hr className='table-separator'/>
-          </>
-          )
-        }
-      })}
+              <hr className='table-separator'/>
+            </>
+            )
+          }
+        })}
+      </div>
 
       <div className="bottom-cart-container">
         <div className="cart-total-container">
