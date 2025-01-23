@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import './CartPage.css'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from "react-router";
 
 const CartPage = () => {
-  const {cartContainer, removeCart, food_list} = useContext(StoreContext)
+  const { cartContainer, removeCart, food_list, getTotalCartAmount } = useContext(StoreContext)
+  let navigate = useNavigate();
 
   return (
     <div className='cart-main-container'>
@@ -16,27 +18,27 @@ const CartPage = () => {
           <p>Total</p>
           <p>Remove</p>
         </div>
-        <hr className='table-separator'/>
+        <hr className='table-separator' />
         {food_list.map((item, index) => {
           if (cartContainer[item._id] > 0) {
             return (
               <>
-              <div className='cart-table-layout indiv-layout-item'> 
-                <div className="image-container-item">
-                  <img src={item.image} className='cart-item-image' />
+                <div key={index} className='cart-table-layout indiv-layout-item'>
+                  <div className="image-container-item">
+                    <img src={item.image} className='cart-item-image' />
+                  </div>
+                  <p className='cart-item-detail'>{item.name}</p>
+                  <p className='cart-item-detail'>${item.price}</p>
+                  <p className='cart-item-detail'>{cartContainer[item._id]}</p>
+                  <p className='cart-item-detail'>${cartContainer[item._id] * item.price}</p>
+                  <div className="remove-container">
+                    <span className='remove-item-x' onClick={() => removeCart(item._id)}>
+                      X
+                    </span>
+                  </div>
                 </div>
-                <p className='cart-item-detail'>{item.name}</p>
-                <p className='cart-item-detail'>${item.price}</p>
-                <p className='cart-item-detail'>{cartContainer[item._id]}</p>
-                <p className='cart-item-detail'>${cartContainer[item._id] * item.price}</p>
-                <div className="remove-container">
-                  <span className='remove-item-x' onClick={() => removeCart(item._id)}>
-                    X
-                  </span>
-                </div>  
-              </div>
-              <hr className='table-separator'/>
-            </>
+                <hr className='table-separator' />
+              </>
             )
           }
         })}
@@ -48,8 +50,8 @@ const CartPage = () => {
             <h2>Cart Totals</h2>
             <div className="sub-del-container">
               <div className="subtotal-container">
-                <p>Subtotal</p>  
-                <p>{0}</p>
+                <p>Subtotal</p>
+                <p>{getTotalCartAmount()}</p>
               </div>
               <hr />
               <div className="delfee-container">
@@ -65,7 +67,7 @@ const CartPage = () => {
             <p>${0}</p>
           </div>
           <div className="button-container">
-            <button className='checkout-button'>PROCEED TO CHECKOUT</button>
+            <button className='checkout-button' onClick={() => navigate('/order')}>PROCEED TO CHECKOUT</button>
           </div>
         </div>
 
@@ -78,7 +80,7 @@ const CartPage = () => {
         </div>
 
       </div>
-      
+
     </div>
   )
 }
