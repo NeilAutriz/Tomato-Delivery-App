@@ -12,9 +12,8 @@ function App() {
   const [showSignIn, setShowSignIn] = useState(false);
 
   return (
-    <>
-      {showSignIn == true ? <SignIn setShowSignIn={setShowSignIn} /> : <></>}
     <div className='main-container'>
+      {showSignIn == true ? <SignIn setShowSignIn={setShowSignIn} /> : <></>}
       <Navbar setShowSignIn={setShowSignIn} />
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -23,7 +22,6 @@ function App() {
       </Routes>
       <Footer />
     </div>
-    </>
   )
 }
 

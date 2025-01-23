@@ -9,11 +9,13 @@ const Navbar = ({setShowSignIn}) => {
   return (
     <div className='nav-container'>
       <div className="nav-logo">
-            <img src={assets.logo} className='logo-image'/>              
+        <Link to='/'>
+          <img src={assets.logo} className='logo-image' />  
+        </Link>
       </div>
 
       <ul className='navigation-links'>
-        <Link className={navlink === 'home' ? 'active' : ''}
+        <Link to='/'className={navlink === 'home' ? 'active' : ''}
           onClick={() => setNavlink('home')}>
           home
         </Link>
@@ -34,13 +36,21 @@ const Navbar = ({setShowSignIn}) => {
       <div className="search-containers">
         <img src={assets.search_icon} className='search-icon' />
         <div className="basket-icon-component">
-          <img src={assets.basket_icon} className='basket-icon' />
+          <Link to='/cart'>
+            <img src={assets.basket_icon} className='basket-icon' />
+          </Link>
           <div className="dot" />
         </div>
 
         <button className='sign-in-button'
         onClick={() => setShowSignIn(true)}>sign in</button>
       </div>
+
+
+      
+      
+      
+
 
     </div>
   )

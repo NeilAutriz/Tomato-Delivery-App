@@ -1,0 +1,142 @@
+.cart-main-container{
+    margin: 100px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-table-layout{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.indiv-layout-item{
+    margin: 10px 0px;
+    color: black;
+}
+
+.image-container-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cart-item-image{
+    width: 50px;
+}
+
+.table-separator{
+    height: 1px;
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+.remove-item-x{
+    cursor: pointer;
+
+}
+
+
+.bottom-cart-container{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.cart-total-container{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.coupon-section-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    border-radius: 5px;
+}
+
+.promo-code-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.coupon-input {
+    background-color: #eaeaea;
+    border: none;
+    outline: none;
+    padding-left: 15px; 
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.submit-coupon-button{
+    height: 100%;
+    width: 30%;
+    border: none;
+    background-color: #323232;
+    color: white;
+    border-radius: 5px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.sub-del-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.subtotal-container, .delfee-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: grey;
+}
+
+.total-price-display{
+    margin: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-components h2{
+    margin-bottom: 15px;
+}
+
+.checkout-button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: tomato;
+    padding: 9px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
