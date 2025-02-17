@@ -1,0 +1,21 @@
+.nav-bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 3px #a9a9a9 solid;
+    align-items: center;
+}
+
+.admin-logo{
+    width: 170px;
+    margin-left: 20px;
+}
+
+.admin-profile{
+    margin-right: 20px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
