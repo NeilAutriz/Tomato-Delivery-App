@@ -18,3 +18,8 @@ hr{
   width: 100%;
   color: #a9a9a9;
 }
+
+.admin-content{
+  display: flex;
+  flex-direction: row;
+}
